@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+
+.game {
+  width: min-content;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em;
+}
+
+.grid {
+  display: grid;
+  font-size: 9px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid div {
+  padding: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+td {
+  border: solid black 1px;
+  padding: 3px;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+}
+
+tr.row0 td {
+  border-top-width: 3px;
+}
+
+tr.row2 td {
+  border-bottom-width: 3px;
+}
+
+td.col0 {
+  border-left-width: 3px;
+}
+
+td.col2 {
+  border-right-width: 3px;
+}
+
+td.pad {
+  color: #36c;
+  font-weight: 600;
+}
+
+td.hint {
+  color: #666;
+}
+
+td.hint .grid {
+  visibility: hidden;
+}
+
+.game.hints td.hint .grid {
+  visibility: visible;
+}
+
+td.init {
+  color: #000;
+  font-weight: bold;
+}
+
+td.play {
+  color: #36c;
+  font-weight: bold;
+}
